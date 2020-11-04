@@ -3,12 +3,15 @@ site_description: 'Updated version of MkDocs ReadTheDocs theme'
 site_author: 'Chad Sheets'
 
 
-theme:
-    name: readthedocs
+
+theme: 
+    name: null
+    custom_dir: 'rtd_dropdown/'
+    collapse_by_default: true
     highlightjs: true
     hljs_languages:
         - yaml
-        - rust
+        - django
 
 
 repo_url: https://github.com/teslachaos/teslachaos.github.io
