@@ -11,7 +11,7 @@ theme:
         - yaml
         - django
 
-repo_url: https://github.com/teslachaos/test
+repo_url: https://github.com/teslachaos/teslachaos.github.io
 
 markdown_extensions:
   - extra
