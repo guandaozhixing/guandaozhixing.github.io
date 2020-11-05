@@ -55,7 +55,7 @@ extra_javascript:
   
   
 nav:
-    - MkDocs: index.md
+    - English: English/English_tense.md
     - User Guide:
         - Writing Your Docs: user-guide/writing-your-docs.md
         - Styling Your Docs: user-guide/styling-your-docs.md
