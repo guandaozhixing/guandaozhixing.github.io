@@ -4,6 +4,12 @@ this is used to connecting two words or sentences in writing scientific papers
 
 ## examples
 
+### adverb
+
+**wherein**: in this place, document, statement or fact
+> example: Herein, we present ...
+
+
 连接词的意义分类
 
 表递进moreover, in addition, what is more，furthermore, also, then, besides, etc.
