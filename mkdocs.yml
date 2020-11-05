@@ -4,14 +4,14 @@ site_author: 'Chad Sheets'
 
 
 
-theme: 
-    name: null
-    custom_dir: 'rtd_dropdown/'
-    collapse_by_default: true
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - django
+theme: 'material'
+#    name: null
+#    custom_dir: 'rtd_dropdown/'
+#    collapse_by_default: true
+#    highlightjs: true
+#    hljs_languages:
+#        - yaml
+#        - django
 
 
 repo_url: https://github.com/teslachaos/teslachaos.github.io
