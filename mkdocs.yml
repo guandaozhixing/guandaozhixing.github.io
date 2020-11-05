@@ -55,7 +55,8 @@ extra_javascript:
   
   
 nav:
-    - English: English/English_tense.md
+    - English: 
+        - tense: English/English_tense.md
     - User Guide:
         - Writing Your Docs: user-guide/writing-your-docs.md
         - Styling Your Docs: user-guide/styling-your-docs.md
