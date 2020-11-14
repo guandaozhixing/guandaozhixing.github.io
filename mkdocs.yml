@@ -59,6 +59,8 @@ nav:
         - Tense: English/English_tense.md
         - Connection: English/connecting_words.md
         - Confused academic words: English/scholar_related.md
+    - Comsol:
+        - Photonic crystal: Comsol/manual.md
     - User Guide:
         - Writing Your Docs: user-guide/writing-your-docs.md
         - Styling Your Docs: user-guide/styling-your-docs.md
