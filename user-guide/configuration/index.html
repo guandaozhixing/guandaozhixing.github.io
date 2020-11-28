@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZZLiu">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Configuration - ReadTheDocs blog</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuration";
+    var mkdocs_page_input_path = "user-guide/configuration.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-182117330-1', 'teslachaos.github.io');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ReadTheDocs blog</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">English</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../English/English_tense/">Tense</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../English/connecting_words/">Connection</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../English/scholar_related/">Confused academic words</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Comsol</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../Comsol/manual/">Photonic crystal</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">User Guide</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../writing-your-docs/">Writing Your Docs</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../styling-your-docs/">Styling Your Docs</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Configuration
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#introduction">Introduction</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#project-information">
+      Project information
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#site_name">site_name</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#site_url">site_url</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#repo_url">repo_url</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#repo_name">repo_name</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#edit_uri">edit_uri</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#site_description">site_description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#site_author">site_author</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#copyright">copyright</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#google_analytics">google_analytics</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#remote_branch">remote_branch</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#remote_name">remote_name</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-layout">
+      Documentation layout
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#nav">nav</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#build-directories">
+      Build directories
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#theme">
+      theme
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#name">name:</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#custom_dir">custom_dir:</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#static_templates">static_templates:</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#theme-specific-keywords">(theme specific keywords)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#docs_dir">docs_dir</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#site_dir">site_dir</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#extra_css">extra_css</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#extra_javascript">extra_javascript</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#extra_templates">extra_templates</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#extra">extra</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#preview-controls">
+      Preview controls
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#use_directory_urls">use_directory_urls</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#strict">strict</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#dev_addr">dev_addr</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#formatting-options">
+      Formatting options
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#markdown_extensions">markdown_extensions</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#plugins">
+      plugins
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l5 current with-children">
+    <a href="#search">
+      Search
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5 current">
+    <ul class="subnav-l5 current">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#separator">separator</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#lang">lang</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#prebuild_index">prebuild_index</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../deploying-your-docs/">Deploying Your Docs</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../custom-themes/">Custom Themes</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../plugins/">Plugins</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">About</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../about/release-notes/">Release Notes</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../about/contributing/">Contributing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../about/license/">License</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ReadTheDocs blog</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/teslachaos/teslachaos.github.io/edit/master/docs/user-guide/configuration.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="configuration">Configuration</h1>
+<p>Guide to all available configuration settings.</p>
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p>Project settings are always configured by using a YAML configuration file in the
+project directory named <code>mkdocs.yml</code>.</p>
+<p>As a minimum this configuration file must contain the <code>site_name</code> setting. All
+other settings are optional.</p>
+<h2 id="project-information">Project information</h2>
+<h3 id="site_name">site_name</h3>
+<p>This is a <strong>required setting</strong>, and should be a string that is used as the main
+title for the project documentation. For example:</p>
+<pre class="highlight"><code class="language-yaml">site_name: Marshmallow Generator</code></pre>
+<p>When rendering the theme this setting will be passed as the <code>site_name</code> context
+variable.</p>
+<h3 id="site_url">site_url</h3>
+<p>Set the canonical URL of the site. This will add a link tag with the canonical
+URL to the generated HTML header.</p>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="repo_url">repo_url</h3>
+<p>When set, provides a link to your repository (GitHub, Bitbucket, GitLab, ...)
+on each page.</p>
+<pre class="highlight"><code class="language-yaml">repo_url: https://github.com/example/repository/</code></pre>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="repo_name">repo_name</h3>
+<p>When set, provides the name for the link to your repository on each page.</p>
+<p><strong>default</strong>: <code>'GitHub'</code>, <code>'Bitbucket'</code> or <code>'GitLab'</code> if the <code>repo_url</code> matches
+those domains, otherwise the hostname from the <code>repo_url</code>.</p>
+<h3 id="edit_uri">edit_uri</h3>
+<p>Path from the base <code>repo_url</code> to the docs directory when directly viewing a
+page, accounting for specifics of the repository host (e.g. GitHub, Bitbucket,
+etc), the branch, and the docs directory itself. MkDocs concatenates <code>repo_url</code>
+and <code>edit_uri</code>, and appends the input path of the page.</p>
+<p>When set, and if your theme supports it, provides a link directly to the page in
+your source repository. This makes it easier to find and edit the source for the
+page. If <code>repo_url</code> is not set, this option is ignored. On some themes, setting
+this option may cause an edit link to be used in place of a repository link.
+Other themes may show both links.</p>
+<p>The <code>edit_uri</code> supports query ('?') and fragment ('#') characters. For
+repository hosts that use a query or a fragment to access the files, the
+<code>edit_uri</code> might be set as follows. (Note the <code>?</code> and <code>#</code> in the URI...)</p>
+<pre class="highlight"><code class="language-yaml"># Query string example
+edit_uri: '?query=root/path/docs/'</code></pre>
+<pre class="highlight"><code class="language-yaml"># Hash fragment example
+edit_uri: '#root/path/docs/'</code></pre>
+<p>For other repository hosts, simply specify the relative path to the docs
+directory.</p>
+<pre class="highlight"><code class="language-yaml"># Query string example
+edit_uri: root/path/docs/</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On a few known hosts (specifically GitHub, Bitbucket and GitLab), the
+<code>edit_uri</code> is derived from the 'repo_url' and does not need to be set
+manually. Simply defining a <code>repo_url</code> will automatically populate the
+<code>edit_uri</code> configs setting.</p>
+<p>For example, for a GitHub- or GitLab-hosted repository, the <code>edit_uri</code>
+would be automatically set as <code>edit/master/docs/</code> (Note the <code>edit</code> path
+and <code>master</code> branch).</p>
+<p>For a Bitbucket-hosted repository, the equivalent <code>edit_uri</code> would be
+automatically set as <code>src/default/docs/</code> (note the <code>src</code> path and <code>default</code>
+branch).</p>
+<p>To use a different URI than the default (for example a different branch),
+simply set the <code>edit_uri</code> to your desired string. If you do not want any
+"edit URL link" displayed on your pages, then set <code>edit_uri</code> to an empty
+string to disable the automatic setting.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On GitHub and GitLab, the default "edit" path (<code>edit/master/docs/</code>) opens
+the page in the online editor. This functionality requires that the user
+have and be logged in to a GitHub/GitLab account. Otherwise, the user will
+be redirected to a login/signup page. Alternatively, use the "blob" path
+(<code>blob/master/docs/</code>) to open a read-only view, which supports anonymous
+access.</p>
+</div>
+<p><strong>default</strong>: <code>edit/master/docs/</code> for GitHub and GitLab repos or
+<code>src/default/docs/</code> for a Bitbucket repo, if <code>repo_url</code> matches those domains,
+otherwise <code>null</code></p>
+<h3 id="site_description">site_description</h3>
+<p>Set the site description. This will add a meta tag to the generated HTML header.</p>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="site_author">site_author</h3>
+<p>Set the name of the author. This will add a meta tag to the generated HTML
+header.</p>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="copyright">copyright</h3>
+<p>Set the copyright information to be included in the documentation by the theme.</p>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="google_analytics">google_analytics</h3>
+<p>Set the Google analytics tracking configuration.</p>
+<pre class="highlight"><code class="language-yaml">google_analytics: ['UA-36723568-3', 'mkdocs.org']</code></pre>
+<p><strong>default</strong>: <code>null</code></p>
+<h3 id="remote_branch">remote_branch</h3>
+<p>Set the remote branch to commit to when using <code>gh-deploy</code> to deploy to Github
+Pages. This option can be overridden by a command line option in <code>gh-deploy</code>.</p>
+<p><strong>default</strong>: <code>gh-pages</code></p>
+<h3 id="remote_name">remote_name</h3>
+<p>Set the remote name to push to when using <code>gh-deploy</code> to deploy to Github Pages.
+This option can be overridden by a command line option in <code>gh-deploy</code>.</p>
+<p><strong>default</strong>: <code>origin</code></p>
+<h2 id="documentation-layout">Documentation layout</h2>
+<h3 id="nav">nav</h3>
+<p>This setting is used to determine the format and layout of the global navigation
+for the site. For example, the following would create "Introduction", "User
+Guide" and "About" navigation items.</p>
+<pre class="highlight"><code class="language-yaml">nav:
+    - 'Introduction': 'index.md'
+    - 'User Guide': 'user-guide.md'
+    - 'About': 'about.md'</code></pre>
+<p>All paths must be relative to the <code>mkdocs.yml</code> configuration file. See the
+section on <a href="../writing-your-docs/#configure-pages-and-navigation">configuring pages and navigation</a> for a more detailed breakdown,
+including how to create sub-sections.</p>
+<p>Navigation items may also include links to external sites. While titles are
+optional for internal links, they are required for external links. An external
+link may be a full URL or a relative URL. Any path which is not found in the
+files is assumed to be an external link.</p>
+<pre class="highlight"><code class="language-yaml">nav:
+    - Home: index.md
+    - User Guide: user-guide.md
+    - Bug Tracker: https://example.com/</code></pre>
+<p>In the above example, the first two items point to local files while the third
+points to an external site.</p>
+<p>However, sometimes the MkDocs site is hosted in a subdirectory of a project's
+site and you may want to link to other parts of the same site without including
+the full domain. In that case, you may use and appropriate relative URL.</p>
+<pre class="highlight"><code class="language-yaml">site_url: https://example.com/foo/
+
+nav:
+    - Home: ../
+    - User Guide: user-guide.md
+    - Bug Tracker: /bugs/</code></pre>
+<p>In the above example, two different styles of external links are used. First
+note that the <code>site_url</code> indicates that the MkDocs site is hosted in the <code>/foo/</code>
+subdirectory of the domain. Therefore, the <code>Home</code> navigation item is a relative
+link which steps up one level to the server root and effectively points to
+<code>https://example.com/</code>. The <code>Bug Tracker</code> item uses an absolute path from the
+server root and effectively points to <code>https://example.com/bugs/</code>. Of course, the
+<code>User Guide</code> points to a local MkDocs page.</p>
+<p><strong>default</strong>: By default <code>nav</code> will contain an alphanumerically sorted, nested
+list of all the Markdown files found within the <code>docs_dir</code> and its
+sub-directories. If none are found it will be <code>[]</code> (an empty list).</p>
+<h2 id="build-directories">Build directories</h2>
+<h3 id="theme">theme</h3>
+<p>Sets the theme and theme specific configuration of your documentation site.
+May be either a string or a set of key/value pairs.</p>
+<p>If a string, it must be the string name of a known installed theme. For a list
+of available themes visit <a href="../styling-your-docs/">styling your docs</a>.</p>
+<p>An example set of key/value pairs might look something like this:</p>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: mkdocs
+    custom_dir: my_theme_customizations/
+    static_templates:
+        - sitemap.html
+    include_sidebar: false</code></pre>
+<p>If a set of key/value pairs, the following nested keys can be defined:</p>
+<div class="admonition block">
+<h4 id="name">name:</h4>
+<p>The string name of a known installed theme. For a list of available themes
+visit <a href="../styling-your-docs/">styling your docs</a>.</p>
+<h4 id="custom_dir">custom_dir:</h4>
+<p>A directory containing a custom theme. This can either be a relative
+directory, in which case it is resolved relative to the directory containing
+your configuration file, or it can be an absolute directory path from the
+root of your local file system.</p>
+<p>See <a href="../styling-your-docs/#using-the-theme_dir">styling your docs</a> for details if you would like to tweak an
+existing theme.</p>
+<p>See <a href="../custom-themes/">custom themes</a> if you would like to build your own theme from the
+ground up.</p>
+<h4 id="static_templates">static_templates:</h4>
+<p>A list of templates to render as static pages. The templates must be located
+in either the theme's template directory or in the <code>custom_dir</code> defined in
+the theme configuration.</p>
+<h4 id="theme-specific-keywords">(theme specific keywords)</h4>
+<p>Any additional keywords supported by the theme can also be defined. See the
+documentation for the theme you are using for details.</p>
+</div>
+<p><strong>default</strong>: <code>'mkdocs'</code></p>
+<h3 id="docs_dir">docs_dir</h3>
+<p>The directory containing the documentation source markdown files. This can
+either be a relative directory, in which case it is resolved relative to the
+directory containing your configuration file, or it can be an absolute directory
+path from the root of your local file system.</p>
+<p><strong>default</strong>: <code>'docs'</code></p>
+<h3 id="site_dir">site_dir</h3>
+<p>The directory where the output HTML and other files are created. This can either
+be a relative directory, in which case it is resolved relative to the directory
+containing your configuration file, or it can be an absolute directory path from
+the root of your local file system.</p>
+<p><strong>default</strong>: <code>'site'</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note:</p>
+<p>If you are using source code control you will normally want to ensure that
+your <em>build output</em> files are not committed into the repository, and only
+keep the <em>source</em> files under version control. For example, if using <code>git</code>
+you might add the following line to your <code>.gitignore</code> file:</p>
+<pre class="highlight"><code>site/
+</code></pre>
+<p>If you're using another source code control tool, you'll want to check its
+documentation on how to ignore specific directories.</p>
+</div>
+<h3 id="extra_css">extra_css</h3>
+<p>Set a list of CSS files in your <code>docs_dir</code> to be included by the theme. For
+example, the following example will include the extra.css file within the
+css subdirectory in your <a href="#docs_dir">docs_dir</a>.</p>
+<pre class="highlight"><code class="language-yaml">extra_css:
+    - css/extra.css
+    - css/second_extra.css</code></pre>
+<p><strong>default</strong>: <code>[]</code> (an empty list).</p>
+<h3 id="extra_javascript">extra_javascript</h3>
+<p>Set a list of JavaScript files in your <code>docs_dir</code> to be included by the theme.
+See the example in <a href="#extra_css">extra_css</a> for usage.</p>
+<p><strong>default</strong>: <code>[]</code> (an empty list).</p>
+<h3 id="extra_templates">extra_templates</h3>
+<p>Set a list of templates in your <code>docs_dir</code> to be built by MkDocs. To see more
+about writing templates for MkDocs read the documentation about <a href="../custom-themes/">custom themes</a>
+and specifically the section about the <a href="../custom-themes/#template-variables">variables that are available</a> to
+templates. See the example in <a href="#extra_css">extra_css</a> for usage.</p>
+<p><strong>default</strong>: <code>[]</code> (an empty list).</p>
+<h3 id="extra">extra</h3>
+<p>A set of key value pairs, where the values can be any valid YAML construct, that
+will be passed to the template. This allows for great flexibility when creating
+custom themes.</p>
+<p>For example, if you are using a theme that supports displaying the project
+version, you can pass it to the theme like this:</p>
+<pre class="highlight"><code class="language-yaml">extra:
+    version: 1.0</code></pre>
+<p><strong>default</strong>: By default <code>extra</code> will be an empty key value mapping.</p>
+<h2 id="preview-controls">Preview controls</h2>
+<h3 id="use_directory_urls">use_directory_urls</h3>
+<p>This setting controls the style used for linking to pages within the
+documentation.</p>
+<p>The following table demonstrates how the URLs used on the site differ when
+setting <code>use_directory_urls</code> to <code>true</code> or <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Source file</th>
+<th>use_directory_urls: true</th>
+<th>use_directory_urls: false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index.md</td>
+<td>/</td>
+<td>/index.html</td>
+</tr>
+<tr>
+<td>api-guide.md</td>
+<td>/api-guide/</td>
+<td>/api-guide.html</td>
+</tr>
+<tr>
+<td>about/license.md</td>
+<td>/about/license/</td>
+<td>/about/license.html</td>
+</tr>
+</tbody>
+</table>
+<p>The default style of <code>use_directory_urls: true</code> creates more user friendly URLs,
+and is usually what you'll want to use.</p>
+<p>The alternate style can occasionally be useful if you want your documentation to
+remain properly linked when opening pages directly from the file system, because
+it creates links that point directly to the target <em>file</em> rather than the target
+<em>directory</em>.</p>
+<p><strong>default</strong>: <code>true</code></p>
+<h3 id="strict">strict</h3>
+<p>Determines how warnings are handled. Set to <code>true</code> to halt processing when a
+warning is raised. Set to <code>false</code> to print a warning and continue processing.</p>
+<p><strong>default</strong>: <code>false</code></p>
+<h3 id="dev_addr">dev_addr</h3>
+<p>Determines the address used when running <code>mkdocs serve</code>. Must be of the format
+<code>IP:PORT</code>.</p>
+<p>Allows a custom default to be set without the need to pass it through the
+<code>--dev_addr</code> option every time the <code>mkdocs serve</code> command is called.</p>
+<p><strong>default</strong>: <code>'127.0.0.1:8000'</code></p>
+<h2 id="formatting-options">Formatting options</h2>
+<h3 id="markdown_extensions">markdown_extensions</h3>
+<p>MkDocs uses the <a href="https://python-markdown.github.io/">Python Markdown</a> library to translate Markdown files
+into HTML. Python Markdown supports a variety of <a href="https://python-markdown.github.io/extensions/">extensions</a>
+that customize how pages are formatted. This setting lets you enable a list of
+extensions beyond the ones that MkDocs uses by default (<code>meta</code>, <code>toc</code>, <code>tables</code>,
+and <code>fenced_code</code>).</p>
+<p>For example, to enable the <a href="https://python-markdown.github.io/extensions/smarty/">SmartyPants typography extension</a>, use:</p>
+<pre class="highlight"><code class="language-yaml">markdown_extensions:
+    - smarty</code></pre>
+<p>Some extensions provide configuration options of their own. If you would like to
+set any configuration options, then you can nest a key/value mapping
+(<code>option_name: option value</code>) of any options that a given extension supports.
+See the documentation for the extension you are using to determine what options
+they support.</p>
+<p>For example, to enable permalinks in the (included) <code>toc</code> extension, use:</p>
+<pre class="highlight"><code class="language-yaml">markdown_extensions:
+    - toc:
+        permalink: True</code></pre>
+<p>Note that a colon (<code>:</code>) must follow the extension name (<code>toc</code>) and then on a new
+line the option name and value must be indented and separated by a colon. If you
+would like to define multiple options for a single extension, each option must be
+defined on a separate line:</p>
+<pre class="highlight"><code class="language-yaml">markdown_extensions:
+    - toc:
+        permalink: True
+        separator: "_"</code></pre>
+<p>Add an additional item to the list for each extension. If you have no
+configuration options to set for a specific extension, then simply omit options
+for that extension:</p>
+<pre class="highlight"><code class="language-yaml">markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+    - sane_lists</code></pre>
+<div class="admonition note">
+<p class="admonition-title">See Also:</p>
+<p>The Python-Markdown documentation provides a <a href="https://python-markdown.github.io/extensions/">list of extensions</a>
+which are available out-of-the-box. For a list of configuration options
+available for a given extension, see the documentation for that extension.</p>
+<p>You may also install and use various <a href="https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions">third party extensions</a>. Consult
+the documentation provided by those extensions for installation instructions
+and available configuration options.</p>
+</div>
+<p><strong>default</strong>: <code>[]</code> (an empty list).</p>
+<h3 id="plugins">plugins</h3>
+<p>A list of plugins (with optional configuration settings) to use when building
+the site . See the <a href="../plugins/">Plugins</a> documentation for full details.</p>
+<p>If the <code>plugins</code> config setting is defined in the <code>mkdocs.yml</code> config file, then
+any defaults (such as <code>search</code>) are ignored and you need to explicitly re-enable
+the defaults if you would like to continue using them:</p>
+<pre class="highlight"><code class="language-yaml">plugins:
+    - search
+    - your_other_plugin</code></pre>
+<p>To completely disable all plugins, including any defaults, set the <code>plugins</code>
+setting to an empty list:</p>
+<pre class="highlight"><code class="language-yaml">plugins: []</code></pre>
+<p><strong>default</strong>: <code>['search']</code> (the "search" plugin included with MkDocs).</p>
+<h4 id="search">Search</h4>
+<p>A search plugin is provided by default with MkDocs which uses <a href="https://lunrjs.com/">lunr.js</a> as a
+search engine. The following config options are available to alter the behavior
+of the search plugin:</p>
+<h5 id="separator"><strong>separator</strong></h5>
+<p>A regular expression which matches the characters used as word separators when
+building the index. By default whitespace and the hyphen (<code>-</code>) are used. To add
+the dot (<code>.</code>) as a word separator you might do this:</p>
+<pre class="highlight"><code class="language-yaml">plugins:
+    - search:
+        separator: '[\s\-\.]+'</code></pre>
+<p><strong>default</strong>: <code>'[\s\-]+'</code></p>
+<h5 id="lang"><strong>lang</strong></h5>
+<p>A list of languages to use when building the search index as identified by their
+<a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a> language codes. With <a href="https://github.com/MihaiValentin/lunr-languages#lunr-languages-----">Lunr Languages</a>, the following languages are
+supported:</p>
+<ul>
+<li><code>da</code>: Danish</li>
+<li><code>du</code>: Dutch</li>
+<li><code>en</code>: English</li>
+<li><code>fi</code>: Finnish</li>
+<li><code>fr</code>: French</li>
+<li><code>de</code>: German</li>
+<li><code>hu</code>: Hungarian</li>
+<li><code>it</code>: Italian</li>
+<li><code>jp</code>: Japanese</li>
+<li><code>no</code>: Norwegian</li>
+<li><code>pt</code>: Portuguese</li>
+<li><code>ro</code>: Romanian</li>
+<li><code>ru</code>: Russian</li>
+<li><code>es</code>: Spanish</li>
+<li><code>sv</code>: Swedish</li>
+<li><code>th</code>: Thai</li>
+<li><code>tr</code>: Turkish</li>
+</ul>
+<p>You may <a href="https://github.com/MihaiValentin/lunr-languages/blob/master/CONTRIBUTING.md">contribute additional languages</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While search does support using multiple languages together, it is best not
+to add additional languages unless you really need them. Each additional
+language adds significant bandwidth requirements and uses more browser
+resources. Generally it is best to keep each instance of MkDocs to a single
+language.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lunr Languages does not currently include support for Chinese or other Asian
+languages. However, some users have reported decent results using Japanese.</p>
+</div>
+<p><strong>default</strong>: <code>['en']</code></p>
+<h5 id="prebuild_index"><strong>prebuild_index</strong></h5>
+<p>Optionally generates a pre-built index of all pages, which provides some
+ performance improvements for larger sites. Before enabling, check that the
+ theme you are using explicitly supports using a prebuilt index (the builtin
+ themes do). The pre-build script requires that <a href="https://nodejs.org/">Node.js</a> be installed and the
+ command <code>node</code> be on the system path. If this feature is enabled and fails for
+ any reason, a warning is issued. You may use the <code>--strict</code> flag when building
+ to cause such a failure to raise an error instead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On smaller sites, using a pre-built index is not recommended as it creates a
+significant increase is bandwidth requirements with little to no noticeable
+improvement to your users. However, for larger sites (hundreds of pages),
+the bandwidth increase is relatively small and your users will notice a
+significant improvement in search performance.</p>
+</div>
+<p><strong>default</strong>: <code>False</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../deploying-your-docs/" class="btn btn-neutral float-right" title="Deploying Your Docs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../styling-your-docs/" class="btn btn-neutral" title="Styling Your Docs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/teslachaos/teslachaos.github.io/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../styling-your-docs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../deploying-your-docs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML" defer></script>
+      <script src="../../javascripts/config.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
